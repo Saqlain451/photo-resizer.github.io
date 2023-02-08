@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #5f89b6;
+  --color-secondary: #041723;
+  --color-bg: #eaeaea;
+}
+
+body {
+  background-color: var(--color-bg);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--color-bg);
+  width: 35%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 41px 41px 82px #bebebe, -41px -41px 82px #ffffff !important ;
+  padding: 2rem;
+  cursor: pointer;
+}
+.card .card-top{
+    width: 100%;
+    height: 25rem;
+    border: 2px solid var(--color-primary);
+    border-style: dashed;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-top img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0rem auto;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.card-body label{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    text-transform: capitalize;
+}
+
+.card-body input{
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 0.4rem;
+    border: 0.15rem solid var(--color-primary);
+    outline: none;
+    padding: 0rem .5rem;
+    caret-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: transparent;
+}
+
+.card-bottom{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+
+
+
+
+.btn-download{
+    width: 100% !important;
+    height: 4rem;
+    background-color:var(--color-primary);
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0rem .3rem .5rem rgba(0, 0, 0, .2);
+}
+
+
+@media (width<900px){
+    .card{
+        width: 60%;
+    }
+}
+
+@media (width<541px){
+    .card{
+        width: 90%;
+    }
+    .card .card-top{
+      height: 20rem;
+    }
+}
